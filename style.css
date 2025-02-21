@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none
+}
+
+body{
+    background-color: #12372A;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 20px;
+}
+
+.marca{
+    font-family: "Lexend Zetta", serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #FBFADA;
+    
+}
+
+nav.menu ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav.menu ul li{
+    margin: 0 35px;
+}
+
+nav.menu a{
+    font-family: "Sansita Swashed", serif;
+   font-size: 25px;
+    color:  #FBFADA;
+}
+
+nav.menu a.money{
+    font-family: "Sancreek", serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+    margin-top: 300px;
+    text-align: center;
+}
+
+.logo h2{
+    font-family: "Lexend Zetta", serif;
+    font-weight: bold;
+    font-size:30px;
+    color: #ADBC9F;
+}
+
+.logo h1{
+    font-family: "Sansita Swashed", serif;
+    margin-bottom: 15px;
+    font-size: 95px;
+    color: #FBFADA;
+}
+
+.logo p{
+    font-family: "Lexend Zetta", serif;
+    font-weight: bold;
+    font-size:15px;
+    color: #ADBC9F;
+}
+
+.logo-imagem{
+    posiiton: relative;
+    height: 400px;
+}
+
+.logo-imagem img{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 750px;
+    height: auto;  
+}
+
+.hamburgers-imagens{
+    margin-right: 50px;
+}
+
+section .hamburgers{
+    position: relative;
+}
+
+section .hamburgers-imagens{
+    position: absolute;
+    bottom: -250px;
+    left: 130px;
+    
+   
+}
+
+section img{
+    margin: 5px;
+    width: 100px;
+    height: auto;
+}
+
+.bolinhas{
+    position: relative;
+    
+}
+
+.bolinhas-footer{
+    position: absolute;
+    top: 350px;
+    bottom: 50px;
+    left: 550px;
+    
+}
+
+@media (max-width: 700px) {
+    header {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column; /* Garante que os elementos fiquem em coluna */
+        align-items: center; /* Centraliza os elementos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .logo h2{
+        font-size: 20px;
+    }
+    .logo h1{
+        font-size: 40px;
+    }
+    .logo p{
+        font-size: 10px;
+    }
+
+    .logo {
+        margin-top: 100px;
+        position: relative; /* Garante que a imagem não sobreponha */
+        z-index: 2; /* Mantém o texto acima da imagem */
+    }
+
+    .logo-imagem{
+        posiiton: relative;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .logo-imagem img{
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        max-width: 400px; /* Limite de tamanho */
+        transform: translate(-50%, -50%);
+        height: auto;
+    }
+
+    .bolinhas img {
+        display: none;
+    }
+
+    .hamburgers-imagens {
+        display: none; /* Some com as imagens menores */
+    }
+}
+
