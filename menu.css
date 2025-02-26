@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #12372A;
+}
+
+h2{
+    font-family: "Lexend Zetta", serif; 
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 20px;
+}
+
+.marca{
+    font-family: "Lexend Zetta", serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #FBFADA;
+}
+
+nav.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+nav.menu ul li{
+    margin: 0 35px;
+}
+
+nav.menu a{
+    font-family: "Sansita Swashed", serif;
+    font-size: 25px;
+    color:  #FBFADA;
+}
+
+nav.menu a.money{
+    font-family: "Sancreek", serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container{
+    display: flex;
+    justify-content: center; /* Centraliza os cards na tela */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha quando necessário */
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+.menu-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Corrigido */
+    gap: 10px; /* Espaço entre os cards */
+    column-gap: 20px;
+    row-gap: 40px;
+   // width: 100%; /* Garante que ocupe toda a largura disponível */
+   // max-width: 900px; /* Limita o tamanho máximo */
+    margin: 0 auto; /* Centraliza a .menu-card */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 180px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    object-fit: contain;
+}
+
+.card p {
+    font-family: "Lexend Zetta", serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FBFADA;
+}
